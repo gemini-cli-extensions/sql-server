@@ -1,0 +1,23 @@
+{
+  "name": "sql-server",
+  "version": "0.1.0",
+  "description": "Connect to SQL Server",
+  "mcpServers": {
+    "PostgreSQL": {
+      "command": "${extensionPath}${/}toolbox",
+      "args": [
+        "--prebuilt",
+        "mssql",
+        "--stdio"
+      ],
+      "env": {
+        "MSSQL_HOST": "${MSSQL_HOST}",
+        "MSSQL_PORT": "${MSSQL_PORT}",
+        "MSSQL_DATABASE": "${MSSQL_DATABASE}",
+        "MSSQL_USER": "${MSSQL_USER}",
+        "MSSQL_PASSWORD": "${MSSQL_PASSWORD}"
+      }
+    }
+  },
+  "contextFileName": "SQL-SERVER.md"
+}
