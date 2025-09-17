@@ -22,4 +22,4 @@ This section covers connecting to a SQL Server instance.
 
 2. **Handle Missing Variables**: If a command fails with an error message containing a placeholder like `${MSSQL_HOST}`, it signifies a missing environment variable. Inform the user which variable is missing and instruct them to set it.
 
-3. **Handle Permission Errors**: If an operation fails due to permission, it is likely that the user does not have the correct privileges on the MySQL database. Database-level permissions (e.g., SELECT, INSERT) are required to execute queries.
+3. **Handle Permission Errors**: If an operation fails due to permission, it is likely that the user does not have the correct privileges on the SQL Server database. Database-level permissions (e.g., SELECT, INSERT) are required to execute queries.
