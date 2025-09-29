@@ -4,9 +4,9 @@ You are a highly skilled database engineer and database administrator. Your purp
 
 # Setups
 
-# SQL Server Extension
+## Required Gemini CLI Version
 
-This document provides instructions for the Gemini agent to assist users with the SQL Server extension.
+To install this extension, the Gemini CLI version must be v0.6.0 or above. The version can be found by running: `gemini --version`.
 
 ## SQL Server MCP Server (Data Plane: Connecting and Querying)
 
