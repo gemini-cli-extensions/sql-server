@@ -21,7 +21,9 @@ Before you begin, ensure you have the following:
 * A running SQL Server instance.
 * A user with database-level permissions to execute queries.
 
-## Installation
+## Getting Started
+
+### Installation
 
 To install the extension, use the command:
 
@@ -29,7 +31,7 @@ To install the extension, use the command:
 gemini extensions install https://github.com/gemini-cli-extensions/sql-server
 ```
 
-## Configuration
+### Configuration
 
 Set the following environment variables before starting the Gemini CLI:
 
@@ -38,6 +40,19 @@ Set the following environment variables before starting the Gemini CLI:
 * `MSSQL_DATABASE`: The name of the database to connect to.
 * `MSSQL_USER`: The username for authentication.
 * `MSSQL_PASSWORD`: The password for authentication.
+
+### Start Gemini CLI
+
+To start the Gemini CLI, use the following command:
+
+```bash
+gemini
+```
+
+> [!WARNING]
+> **Changing Instance & Database Connections**
+> Currently, the database connection must be configured before starting the Gemini CLI and can not be changed during a session.
+> To save and resume conversation history use command: `/chat save <tag>` and `/chat resume <tag>`.
 
 ## Usage Examples
 
@@ -57,8 +72,12 @@ Interact with SQl Server using natural language right from your IDE:
 
 ## Additional Extensions
 
-Find additional extensions to support your entire software development lifecycle at [github.com/gemini-cli-extensions](https://github.com/gemini-cli-extensions).
+Find additional extensions to support your entire software development lifecycle at [github.com/gemini-cli-extensions](https://github.com/gemini-cli-extensions), including:
+* [Cloud SQL for SQL Server extension](https://github.com/gemini-cli-extensions/cloud-sql-sqlserver)
+* and more!
 
 ## Troubleshooting
 
-* "cannot execute binary file": Ensure the correct binary for your OS/Architecture has been downloaded. See [Installing the server](https://googleapis.github.io/genai-toolbox/getting-started/introduction/#installing-the-server) for more information.
+* "✖ Error during discovery for server: MCP error -32000: Connection closed": The database connection has not been established. Ensure your configuration is set via environment variables.
+* "✖ MCP ERROR: Error: spawn /Users/<USER>/.gemini/extensions/sql-server/toolbox ENOENT": The Toolbox binary did not download correctly. Ensure you are using Gemini CLI v0.6.0+.
+* "cannot execute binary file": The Toolbox binary did not download correctly. Ensure the correct binary for your OS/Architecture has been downloaded. See [Installing the server](https://googleapis.github.io/genai-toolbox/getting-started/introduction/#installing-the-server) for more information.
