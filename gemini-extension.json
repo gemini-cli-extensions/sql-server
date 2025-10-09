@@ -1,9 +1,9 @@
 {
   "name": "sql-server",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "Connect to SQL Server",
   "mcpServers": {
-    "SQL Server": {
+    "sql_server": {
       "command": "${extensionPath}${/}toolbox",
       "args": [
         "--prebuilt",
