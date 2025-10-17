@@ -1,6 +1,6 @@
 {
   "name": "sql-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Connect to SQL Server",
   "mcpServers": {
     "sql_server": {
