@@ -43,11 +43,13 @@ gemini extensions install https://github.com/gemini-cli-extensions/sql-server
 
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
-* `MSSQL_HOST`: The hostname or IP address of the SQL Server.
-* `MSSQL_PORT`: The port number of the SQL Server.
-* `MSSQL_DATABASE`: The name of the database to connect to.
-* `MSSQL_USER`: The username for authentication.
-* `MSSQL_PASSWORD`: The password for authentication.
+```bash
+export MSSQL_HOST="<your-sql-server-host>"
+export MSSQL_PORT="<your-sql-server-port>"
+export MSSQL_DATABASE="<your-database-name>"
+export MSSQL_USER="<your-database-user>"
+export MSSQL_PASSWORD="<your-database-password>"
+```
 
 ### Start Gemini CLI
 
