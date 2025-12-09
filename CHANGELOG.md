@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.2...0.1.3) (2025-12-09)
+
+
+### Features
+
+* **tool/mssql:** Set default host and port for MSSQL source ([genai-toolbox#​1943](https://redirect.github.com/googleapis/genai-toolbox/issues/1943)) ([7a9cc63](https://redirect.github.com/googleapis/genai-toolbox/commit/7a9cc633768d9ae9a7ff8230002da69d6a36ca86)) ([88756be](https://github.com/gemini-cli-extensions/sql-server/commit/88756bee8851330eb3e3701f10e95f4c7d44476e))
+
 ## [0.1.2](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.1...0.1.2) (2025-10-17)
 
 
