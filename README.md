@@ -44,8 +44,8 @@ gemini extensions install https://github.com/gemini-cli-extensions/sql-server
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
 ```bash
-export MSSQL_HOST="<your-sql-server-host>"
-export MSSQL_PORT="<your-sql-server-port>"
+export MSSQL_HOST="<your-sql-server-host>"  # Optional: defaults to localhost
+export MSSQL_PORT="<your-sql-server-port>"  # Optional: defaults to 1433
 export MSSQL_DATABASE="<your-database-name>"
 export MSSQL_USER="<your-database-user>"
 export MSSQL_PASSWORD="<your-database-password>"
