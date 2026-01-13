@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.3...0.1.4) (2026-01-13)
+
+
+### Features
+
+* **deps:** update dependency googleapis/genai-toolbox to v0.25.0 ([#66](https://github.com/gemini-cli-extensions/sql-server/issues/66)) ([7ccba65](https://github.com/gemini-cli-extensions/sql-server/commit/7ccba656ad090805c02200b97b74d449adc963ef))
+
 ## [0.1.3](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.2...0.1.3) (2025-12-09)
 
 
