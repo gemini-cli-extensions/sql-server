@@ -25,7 +25,7 @@
       "envVar": "MSSQL_PORT"
     },
     {
-      "name": "Database Name",
+      "name": "Database",
       "description": "Name of the database",
       "envVar": "MSSQL_DATABASE"
     },
@@ -37,7 +37,8 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "MSSQL_PASSWORD"
+      "envVar": "MSSQL_PASSWORD",
+      "sensitive": true
     }
   ]
 }
