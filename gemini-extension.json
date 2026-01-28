@@ -9,15 +9,36 @@
         "--prebuilt",
         "mssql",
         "--stdio"
-      ],
-      "env": {
-        "MSSQL_HOST": "${MSSQL_HOST}",
-        "MSSQL_PORT": "${MSSQL_PORT}",
-        "MSSQL_DATABASE": "${MSSQL_DATABASE}",
-        "MSSQL_USER": "${MSSQL_USER}",
-        "MSSQL_PASSWORD": "${MSSQL_PASSWORD}"
-      }
+      ]
     }
   },
-  "contextFileName": "SQL-SERVER.md"
+  "contextFileName": "SQL-SERVER.md",
+  "settings": [
+    {
+      "name": "Host",
+      "description": "Host or IP address of the SQL Server",
+      "envVar": "MSSQL_HOST"
+    },
+    {
+      "name": "Port",
+      "description": "Port number of the SQL Server",
+      "envVar": "MSSQL_PORT"
+    },
+    {
+      "name": "Database",
+      "description": "Name of the database",
+      "envVar": "MSSQL_DATABASE"
+    },
+    {
+      "name": "User",
+      "description": "Username of the database user",
+      "envVar": "MSSQL_USER"
+    },
+    {
+      "name": "Password",
+      "description": "Password of the database user",
+      "envVar": "MSSQL_PASSWORD",
+      "sensitive": true
+    }
+  ]
 }
