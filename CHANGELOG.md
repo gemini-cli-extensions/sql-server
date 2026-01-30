@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.4...0.1.5) (2026-01-30)
+
+
+### Features
+
+* add Configuration settings ([#71](https://github.com/gemini-cli-extensions/sql-server/issues/71)) ([454fd40](https://github.com/gemini-cli-extensions/sql-server/commit/454fd40e1260d52970604b431243b0d02153fc9e))
+
 ## [0.1.4](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.3...0.1.4) (2026-01-13)
 
 
