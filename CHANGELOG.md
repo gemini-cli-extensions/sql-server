@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.5...0.1.6) (2026-02-24)
+
+
+### Bug Fixes
+
+* remove broken keychain support for password ([#87](https://github.com/gemini-cli-extensions/sql-server/issues/87)) ([0d096b5](https://github.com/gemini-cli-extensions/sql-server/commit/0d096b5ad677a6c29a710c2ba5a78ba9c55e6ceb))
+
 ## [0.1.5](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.4...0.1.5) (2026-01-30)
 
 
