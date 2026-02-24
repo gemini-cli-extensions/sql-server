@@ -37,8 +37,7 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "MSSQL_PASSWORD",
-      "sensitive": true
+      "envVar": "MSSQL_PASSWORD"
     }
   ]
 }
