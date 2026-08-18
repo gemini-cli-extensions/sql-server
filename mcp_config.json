@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "sql_server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@toolbox-sdk/server@1.8.0",
+        "--prebuilt",
+        "mssql",
+        "--stdio"
+      ],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}
