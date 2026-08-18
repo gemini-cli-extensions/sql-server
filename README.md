@@ -24,8 +24,11 @@ Learn more about [Gemini CLI Extensions](https://github.com/google-gemini/gemini
 
 Before you begin, ensure you have the following:
 
-* [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version **+v0.6.0**.
-* Setup Gemini CLI [Authentication](https://github.com/google-gemini/gemini-cli/tree/main?tab=readme-ov-file#-authentication-options).
+* One of the supported agent harnesses, installed and authenticated:
+  * [Gemini CLI](https://github.com/google-gemini/gemini-cli) (v0.6.0+)
+  * [Claude Code](https://code.claude.com)
+  * [Codex](https://developers.openai.com/codex)
+  * [Antigravity CLI](https://antigravity.google)
 * [Node.js](https://nodejs.org/) (the MCP server runs via `npx`).
 * A running SQL Server instance.
 * A user with database-level permissions to execute queries.
@@ -34,15 +37,39 @@ Before you begin, ensure you have the following:
 
 ### Installation
 
-To install the extension, use the command:
+All harnesses use the same plugin; the MCP server runs via `npx` (no binary to download). Install with your harness of choice:
+
+**Gemini CLI**
 
 ```bash
 gemini extensions install https://github.com/gemini-cli-extensions/sql-server
 ```
 
+**Claude Code**
+
+```bash
+claude plugin marketplace add gemini-cli-extensions/sql-server
+claude plugin install sql-server@sql-server
+```
+
+**Codex**
+
+```bash
+codex plugin marketplace add gemini-cli-extensions/sql-server
+codex plugin add sql-server@sql-server
+```
+
+**Antigravity**
+
+```bash
+agy plugin install https://github.com/gemini-cli-extensions/sql-server
+```
+
+See [Configuration](#configuration) for how each harness supplies the connection settings.
+
 ### Configuration
 
-You will be prompted to configure the following settings during installation. These settings are saved in an `.env` file within the extension's directory.
+The plugin connects to SQL Server using these settings:
 
 *   `MSSQL_HOST`: (Optional) The SQL Server host. Defaults to `localhost`.
 *   `MSSQL_PORT`: (Optional) The SQL Server port. Defaults to `1433`.
@@ -50,19 +77,11 @@ You will be prompted to configure the following settings during installation. Th
 *   `MSSQL_USER`: The database username.
 *   `MSSQL_PASSWORD`: The password for the database user.
 
-To view or update your configuration:
+How you supply them depends on the harness:
 
-**List Settings:**
-*   Terminal: `gemini extensions list`
-*   Gemini CLI: `/extensions list`
-
-**Update Settings:**
-*   Terminal: `gemini extensions config sql-server [setting name] [--scope <scope>]`
-    *   `setting name`: (Optional) The single setting to configure.
-    *   `scope`: (Optional) The scope of the setting in (`user` or `workspace`). Defaults to `user`.
-*   Currently, you must restart the Gemini CLI for changes to take effect. We recommend using `gemini --resume` to resume your session.
-
-Alternatively, you can manually set these environment variables before starting the Gemini CLI:
+*   **Gemini CLI**: prompted on install and saved to the extension's `.env`. View or update later with `gemini extensions list` / `gemini extensions config sql-server [setting] [--scope user|workspace]` (restart the CLI to apply).
+*   **Claude Code**: pass `--config KEY=VALUE` on install (repeatable), or run `/plugin` inside Claude Code.
+*   **Codex** and **Antigravity**: export the variables in your shell before starting:
 
 #### PowerShell
 ```powershell
