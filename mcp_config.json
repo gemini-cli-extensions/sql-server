@@ -8,8 +8,7 @@
         "--prebuilt",
         "mssql",
         "--stdio"
-      ],
-      "cwd": "${PLUGIN_ROOT}"
+      ]
     }
   }
 }

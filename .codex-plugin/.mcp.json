@@ -9,7 +9,6 @@
         "mssql",
         "--stdio"
       ],
-      "cwd": "${PLUGIN_ROOT}",
       "env_vars": [
         "MSSQL_HOST",
         "MSSQL_PORT",
