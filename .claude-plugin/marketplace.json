@@ -1,0 +1,16 @@
+{
+  "name": "sql-server",
+  "owner": {
+    "name": "Google LLC",
+    "email": "data-cloud-ai-integrations@google.com"
+  },
+  "metadata": {
+    "description": "Connect and interact with a SQL Server database and data."
+  },
+  "plugins": [
+    {
+      "name": "sql-server",
+      "source": "./"
+    }
+  ]
+}
