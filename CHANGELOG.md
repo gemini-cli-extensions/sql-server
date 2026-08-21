@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.1.7](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.6...0.1.7) (2026-08-21)
+
+
+### Features
+
+* **groups:** Add ttlMs and cacheScope customization to config ([mcp-toolbox#​3805](https://redirect.github.com/googleapis/mcp-toolbox/issues/3805)) ([a5d4947](https://redirect.github.com/googleapis/mcp-toolbox/commit/a5d49472bad85e8955dc83852e65c5cd92f351a3)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **migrate:** Convert toolset to group kind during migration ([mcp-toolbox#​3704](https://redirect.github.com/googleapis/mcp-toolbox/issues/3704)) ([0adeaa5](https://redirect.github.com/googleapis/mcp-toolbox/commit/0adeaa51c4e132fe36553b24f88e8f62df90bfaa)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **server/mcp:** Introduce generic client extension registry ([mcp-toolbox#​3723](https://redirect.github.com/googleapis/mcp-toolbox/issues/3723)) ([016245c](https://redirect.github.com/googleapis/mcp-toolbox/commit/016245c21c254a05409a41845e0a8799518363a0)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **skill:** Add review-prs skill for mcp-toolbox ([mcp-toolbox#​3743](https://redirect.github.com/googleapis/mcp-toolbox/issues/3743)) ([5b7bacc](https://redirect.github.com/googleapis/mcp-toolbox/commit/5b7bacc73b9284160b73c4c3f7a53214c653e64a)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **tools:** Add cloud-sql-connect-gce for pg, mysql, mssql ([mcp-toolbox#​3740](https://redirect.github.com/googleapis/mcp-toolbox/issues/3740)) ([ca58fa4](https://redirect.github.com/googleapis/mcp-toolbox/commit/ca58fa4b525d6726b9792a9f6303fbcc26c9ca3f)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* adopt Agent Plugin spec and generate harness manifests ([#99](https://github.com/gemini-cli-extensions/sql-server/issues/99)) ([41190f9](https://github.com/gemini-cli-extensions/sql-server/commit/41190f909defc93aafc9335ec90baeadb667e9fa))
+
+
+### Bug Fixes
+
+* **auth/mcp:** Derive PRM URL from Toolbox URL ([mcp-toolbox#​3765](https://redirect.github.com/googleapis/mcp-toolbox/issues/3765)) ([aa30842](https://redirect.github.com/googleapis/mcp-toolbox/commit/aa308422ad6dd73a014722c3ebf9628d7aa9cc8f)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **config:** Ignore environment variables in YAML comments ([mcp-toolbox#​3807](https://redirect.github.com/googleapis/mcp-toolbox/issues/3807)) ([79aa732](https://redirect.github.com/googleapis/mcp-toolbox/commit/79aa73247d35286e1cc4309883d539cf9a470686)), refs [mcp-toolbox#​3793](https://redirect.github.com/googleapis/mcp-toolbox/issues/3793) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **mcp:** Return Tool execution error for invalid input param ([mcp-toolbox#​3799](https://redirect.github.com/googleapis/mcp-toolbox/issues/3799)) ([8120197](https://redirect.github.com/googleapis/mcp-toolbox/commit/81201978a7a1d2a786eb3707ddaa7b090dd1c454)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **prebuilt/cloud-storage:** Declare tool collections as groups ([mcp-toolbox#​3764](https://redirect.github.com/googleapis/mcp-toolbox/issues/3764)) ([7d468be](https://redirect.github.com/googleapis/mcp-toolbox/commit/7d468be107dfe476d77bd7f937b5dd9c61e5cdc8)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **server:** Avoid a nil-flusher panic in the SSE handler ([mcp-toolbox#​3520](https://redirect.github.com/googleapis/mcp-toolbox/issues/3520)) ([947f42f](https://redirect.github.com/googleapis/mcp-toolbox/commit/947f42f3e8a07362466566043045491d2318db29)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **server/mcp:** Disallow client overriding URL bound parameters ([mcp-toolbox#​3798](https://redirect.github.com/googleapis/mcp-toolbox/issues/3798)) ([f15a9c7](https://redirect.github.com/googleapis/mcp-toolbox/commit/f15a9c7082215bd8e9990395d01b5e4fa3b36c69)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+* **util:** Convert exponent-form JSON numbers in ConvertNumbers ([mcp-toolbox#​3730](https://redirect.github.com/googleapis/mcp-toolbox/issues/3730)) ([e9713ee](https://redirect.github.com/googleapis/mcp-toolbox/commit/e9713eec3acea912e0b6a254b845bd9da04f8192)) ([735c9fb](https://github.com/gemini-cli-extensions/sql-server/commit/735c9fb8d0e43337d2953bf99882cb8ad53596ea))
+
 ## [0.1.6](https://github.com/gemini-cli-extensions/sql-server/compare/0.1.5...0.1.6) (2026-02-24)
 
 
