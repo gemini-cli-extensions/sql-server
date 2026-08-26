@@ -1,4 +1,5 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sql-server",
   "version": "0.1.6",
   "description": "Connect to SQL Server",
